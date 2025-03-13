@@ -52,4 +52,17 @@ LOAD DATA LOCAL INFILE '/opt/homebrew/var/mysql/Data/netflix\ Movies\ Unique\ -\
     -> IGNORE 1 LINES
     -> (movie_id, @dummy1, @dummy2, @dummy3, @dummy4, @dummy5, @dummy6, @dummy7, @dummy8, days_in_top10, viewership_score);
 
- 
+-- Creating my audit table
+CREATE TABLE AuditLog (
+    audit_id INT AUTO_INCREMENT PRIMARY KEY,
+    operation_type VARCHAR(50),
+    movie_id INT,
+    title VARCHAR(255),
+    movie_type VARCHAR(50),
+    netflix_exclusive VARCHAR(3),
+    release_date DATE,
+    operation_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status VARCHAR(50),
+    err_message TEXT,
+    user VARCHAR(255) 
+);
