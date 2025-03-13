@@ -52,5 +52,4 @@ LOAD DATA LOCAL INFILE '/opt/homebrew/var/mysql/Data/netflix\ Movies\ Unique\ -\
     -> IGNORE 1 LINES
     -> (movie_id, @dummy1, @dummy2, @dummy3, @dummy4, @dummy5, @dummy6, @dummy7, @dummy8, days_in_top10, viewership_score);
 
-
- /Users/nina/Databases_Formative/netflix_db_dump.sql 
+ 
