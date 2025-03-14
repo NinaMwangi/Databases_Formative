@@ -62,7 +62,7 @@ CREATE TABLE AuditLog (
     netflix_exclusive VARCHAR(3),
     release_date DATE,
     operation_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    status VARCHAR(50),
+    status_msg VARCHAR(50),
     err_message TEXT,
     user VARCHAR(255) 
 );
