@@ -1,9 +1,10 @@
 # Formative 1 - Databases
-In this project, we will use a Netflix dataset from Kaggle, Link (https://www.kaggle.com/datasets/prasertk/netflix-daily-top-10-in-us). That data will be stored in a MySQL database and MongoDB. We have created an API that retrieves data from the MySQL database hosted on Railway and used the data to train our model.
+This project will use a Netflix dataset from Kaggle, Link (https://www.kaggle.com/datasets/prasertk/netflix-daily-top-10-in-us). That data will be stored in a MySQL database and MongoDB. We have created an API that retrieves data from the MySQL database hosted on Railway and used the data to train our model.
 
 ## MySQL Database & MongoDB - Nina
-The relationship Database in this project is a MySQL database that contains 3 normalized tables: Movies, Ranking & Performance. The relational database has been hosted on Railway, and MongoDB is the NoSQL option. The relational database contains a stored procedure for the Movies table that adds movies to it and a trigger that automatically logs updates to an audit table when any INSERT, UPDATE or DELETE happens on the Movies table. It can be manual updates to the movies table or by calling the stored procedure.
+The relationship Database in this project is a MySQL database that contains 3 normalized tables: Movies, Ranking & Performance. The relational database has been hosted on Railway, and MongoDB is the NoSQL option. The relational database contains a stored procedure for the Movies table that adds movies and a trigger that automatically logs updates to an audit table when any INSERT, UPDATE, or DELETE happens on the Movies table. It can be manual updates to the movies table or by calling the stored procedure.
 
+This is what the initial data looked like from Kaggle.
 ###Original data attributes: 
 1. Movie_id
 2. Rank
@@ -17,6 +18,7 @@ The relationship Database in this project is a MySQL database that contains 3 no
 10. Viewership Score
 11. as of (Date)
 
+After Normalising this is what the data looked like.
 ## Movies Table
 
 | movie_id | title                         | movie_type | netflix_exclusive | release_date |
