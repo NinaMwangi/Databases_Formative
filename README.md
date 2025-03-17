@@ -48,8 +48,7 @@ The relationship Database in this project is a MySQL database that contains 3 no
 
 
 ## Api - Madol
-I created a  RESTful API using FastAPI to perform CRUD operations on the Netflix database hosted on Railway and MongoDB Atlas. I was able to write two scripts that fetch data from the hosted databases. I hosted the api on Render and it is working well as intended. Here is the link to the api endpoint hosted on render.com; https://api-endpoint-lqrn.onrender.com .The two databases are connected with api. I decided to choose the Movies Table in the Netflix database created. The aim is to be able to access the movie data, read, update, delete, put, and create. The cooperation from the team led to this wonderful development. 
-
+I created a  RESTful API using FastAPI to perform CRUD operations on the Netflix database hosted on Railway and MongoDB Atlas. I was able to write two scripts that fetch data from the hosted databases. I hosted the api on Render and it is working well as intended. Here is the link to the api endpoint hosted on render.com; https://api-endpoint-lqrn.onrender.com .The two databases are connected with api. I decided to choose the Movies Table in the Netflix database created. The aim is to be able to access the movie data, read, update, delete, put, and create. The cooperation from the team led to this wonderful development. The data that can be manipulated here can later be retrieved and converted to csv format  for easy accessibility and storage for further use.
 ## Model -Data Fetching and Prediction
 Contributors: Magnifique & AlHassan
 
