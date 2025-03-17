@@ -56,3 +56,4 @@ Contributors: Magnifique & AlHassan
 Created a script to fetch data from the API, targeting the latest entries.
 Prepared data for predictions using a machine learning model from an Intro to ML course.
 Ensured the script properly loads the model, formats input data, and produces accurate predictions.
+The output is a binary classification, producing 0s and 1s which means no = 0 or yes = 1.
