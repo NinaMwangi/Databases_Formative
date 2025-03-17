@@ -17,31 +17,35 @@ The relationship Database in this project is a MySQL database that contains 3 no
 10. Viewership Score
 11. as of (Date)
 
-Movies Table
-movie_id | title                            | movie_type      | netflix_exclusive | release_date |
-+----------+----------------------------------+-----------------+-------------------+--------------+
-|        2 | Tiger King: Murder Mayhem        | TV Show         | Yes               | 2020-03-20   |
-|        3 | Ozark                            | TV Show         | Yes               | 2017-07-21   |
-|        4 | All American                     | TV Show         | No                | 2019-03-28   |
-|        5 | Blood Father                     | Movie           | No                | 2020-03-26   |
+## Movies Table
 
-Ranking Table
- rank_id | movie_id | rank_date  | movie_rank | year_to_date_rank | last_week_rank |
-+---------+----------+------------+------------+-------------------+----------------+
-|       1 |        2 | 2020-04-01 |          1 |                 1 |              1 |
-|       2 |        3 | 2020-04-01 |          2 |                 2 |              1 |
-|       3 |        4 | 2020-04-01 |          3 |                 3 |              2 |
-|       4 |        5 | 2020-04-01 |          4 |                 4 |              2 |
-|       5 |        6 | 2020-04-01 |          5 |                 5 |              4 |
+| movie_id | title                         | movie_type | netflix_exclusive | release_date |
+|----------|-------------------------------|------------|-------------------|--------------|
+| 2        | Tiger King: Murder Mayhem      | TV Show    | Yes               | 2020-03-20   |
+| 3        | Ozark                          | TV Show    | Yes               | 2017-07-21   |
+| 4        | All American                   | TV Show    | No                | 2019-03-28   |
+| 5        | Blood Father                   | Movie      | No                | 2020-03-26   |
 
-Performance Table
-performance_id | movie_id | days_in_top10 | viewership_score |
-+----------------+----------+---------------+------------------+
-|              1 |        2 |             9 |               90 |
-|              2 |        3 |             5 |               45 |
-|              3 |        4 |             9 |               76 |
-|              4 |        5 |             5 |               30 |
-|              5 |        6 |             9 |               55 |
+## Ranking Table
+
+| rank_id | movie_id | rank_date  | movie_rank | year_to_date_rank | last_week_rank |
+|---------|----------|------------|------------|-------------------|----------------|
+| 1       | 2        | 2020-04-01 | 1          | 1                 | 1              |
+| 2       | 3        | 2020-04-01 | 2          | 2                 | 1              |
+| 3       | 4        | 2020-04-01 | 3          | 3                 | 2              |
+| 4       | 5        | 2020-04-01 | 4          | 4                 | 2              |
+| 5       | 6        | 2020-04-01 | 5          | 5                 | 4              |
+
+## Performance Table
+
+| performance_id | movie_id | days_in_top10 | viewership_score |
+|----------------|----------|---------------|------------------|
+| 1              | 2        | 9             | 90               |
+| 2              | 3        | 5             | 45               |
+| 3              | 4        | 9             | 76               |
+| 4              | 5        | 5             | 30               |
+| 5              | 6        | 9             | 55               |
+
 
 ## Api - Madol
 I created a  RESTful API using FastAPI to perform CRUD operations on the Netflix database hosted on Railway and MongoDB Atlas. I was able to write two scripts that fetch data from the hosted databases. I hosted the api on Render and it is working well as intended. The two databases are connected with api. I decided to choose the Movies Table in the Netflix database created. The aim is to be able to access the movie data, read, update, delete, put, and create. The cooperation from the team led to this wonderful development. 
